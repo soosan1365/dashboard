@@ -20,7 +20,7 @@ const Navbar = () => {
       {/*left search */}
       <div className="flex col-span-2 justify-between items-center">
         <span className="md:hidden flex justify-center items-center"><SidebarTrigger className="md:hidden"/>Menu</span>
-      <div className="  hidden md:flex  justify-center items-center py-1  px-5 gap-1 rounded-2xl border-2 bg-gray-50">
+      <div className="  hidden md:flex w-full  justify-start items-center py-1  px-5 gap-1 rounded-2xl border-2 bg-gray-50">
         <SearchIcon />
         <input type="text" placeholder="Search..." className="py-1 " />
       </div> </div>
