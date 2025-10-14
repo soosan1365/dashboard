@@ -6,7 +6,7 @@ const CartTasks = ({title,status,lesson,date,comment,value}) => {
             {/* top */}
             <div className=" w-full flex  justify-between items-center gap-10   ">
                 <h1 className="" >{title} </h1>
-                <span className={`whitespace-nowrap px-3 py-1 rounded-4xl ${status==="in progress"?"bg-red-200":"bg-blue-300"}  `}>{status}</span>
+                <span className={`whitespace-nowrap px-3 py-1 rounded-4xl ${status==="In progress"?"bg-[#F9812A]/90":"bg-blue-300"}  `}>{status}</span>
             </div>
             <p className="text-gray-400">{lesson}</p>
             <div className=" w-full flex justify-between items-center ">
