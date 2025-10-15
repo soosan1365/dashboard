@@ -13,7 +13,7 @@ import { ChevronDownIcon } from "lucide-react"
 import Image from "next/image"
 const ScheduleCart = () => {
   return (
-    <div className=" flex flex-col bg-white shadow-2xs shadow-gray-400 mt-3 p-5  rounded-2xl h-full ">
+    <div className=" flex flex-col bg-white   p-5  rounded-2xl h-full ">
       <div className=" w-full flex justify-between items-center mt-3">
       <h1 className="font-semibold md:text-lg mb-3 "> My schedule</h1>
        <button className="flex justify-center items-center

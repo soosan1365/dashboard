@@ -18,19 +18,19 @@ import {
 const AppSidebar = () => {
   const pathname=usePathname()
   return (
-    <Sidebar className="py-3 pl-3 ">
+    <Sidebar className=" py-3 pl-3 flex-shrink-0 ">
       <SidebarHeader >
         <h1 className=" ml-4 mt-2 font-bold md:text-lg">UpGradely</h1>
       </SidebarHeader>
-      <SidebarContent>
-        <SidebarGroup className="gap-5 ml-5">
+      <SidebarContent className="px-3">
+        <SidebarGroup className="gap-5 ">
           <SidebarMenu>
           {menuItems.map((item, index) => (
              <SidebarMenuItem  key={index}>
               <SidebarMenuButton asChild>
             <Link  href={item.href} className={`
-         ${pathname == item.href ? "  " : ""}`}>
-              <Image src={item.icon} alt="" width={17} height={10} />
+         ${pathname == item.href ? " bg-black text-white  " : ""}`}>
+              <Image src={item.icon} className={`${pathname == item.href ? " bg-white  " : ""}`} alt="" width={17} height={10} />
               <span >{item.lable}</span>
             </Link>
             </SidebarMenuButton>
@@ -39,14 +39,14 @@ const AppSidebar = () => {
           
           </SidebarMenu>
         </SidebarGroup>
-        <SidebarGroup className="gap-5 ml-5 mt-5">
+        <SidebarGroup className="gap-5 mt-5">
           <SidebarMenu>
           {chatNoteMenu.map((item, index) => (
              <SidebarMenuItem  key={index}>
               <SidebarMenuButton asChild>
             <Link  href={item.href} className={`
-         ${pathname == item.href ? "  " : ""}`}>
-              <Image src={item.icon} alt="" width={17} height={10} />
+         ${pathname == item.href ? "  bg-black text-white  " : ""}`}>
+              <Image src={item.icon}  className={`${pathname == item.href ? " bg-white  " : ""}`} alt="" width={17} height={10} />
               <span >{item.lable}</span>
             </Link>
             </SidebarMenuButton>
@@ -56,14 +56,14 @@ const AppSidebar = () => {
           </SidebarMenu>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter  className="gap-5 ml-5 mt-5">
+      <SidebarFooter  className="gap-5  mt-5">
         <SidebarMenu>
           {logoutsSettingMenu.map((item, index) => (
              <SidebarMenuItem  key={index}>
               <SidebarMenuButton asChild>
             <Link  href={item.href} className={`
-         ${pathname == item.href ? "  " : ""}`}>
-              <Image src={item.icon} alt="" width={17} height={10} />
+         ${pathname == item.href ? "  bg-black text-white  " : ""}`}>
+              <Image src={item.icon}  className={`${pathname == item.href ? " bg-white  " : ""}`} alt="" width={17} height={10} />
               <span >{item.lable}</span>
             </Link>
             </SidebarMenuButton>

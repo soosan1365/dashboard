@@ -23,12 +23,12 @@ export const Calendar = () => {
   };
 
   return (
-    <div className="bg-white p-6.5 rounded-xl shadow-md h-full">
+    <div className="bg-white p-6.5 rounded-2xl  h-full">
         <div className=" w-full flex justify-between items-center mt-3">
       <h2 className="text-xl font-semibold mb-4">Class Attendance</h2>
       
        <button className="flex justify-center items-center 
-        bg-black text-white rounded-4xl py-1 px-2">month<ChevronDownIcon className="w-5 h-5 mt-1"/></button></div>
+        bg-black text-white rounded-4xl py-2 px-2">month<ChevronDownIcon className="w-5 h-5 mt-1"/></button></div>
     
       <div className="grid grid-cols-7 gap-4 text-center  text-gray-700 mb-2">
         {days.map((day, index) => (

@@ -2,12 +2,12 @@ import { ArrowUpRight } from "lucide-react";
 
 const Carts = ({title,rate,status,des}) => {
   return (
-    <div className="bg-white shadow-2xs shadow-gray-400 flex flex-col
+    <div className="bg-white  flex flex-col
      gap-5 p-3 rounded-2xl">
       {/* top */}
       <div className="flex justify-between items-center">
         <h1 className="font-semibold text-lg">{title}</h1>
-        <span className="border-2 rounded-full border-blue-200"><ArrowUpRight className="w-7 h-7 p-1" /></span>
+        <span className="border-2 rounded-full border-gray-100"><ArrowUpRight className="w-7 h-7 p-1" /></span>
       </div>
       {/* center */}
       <div className="flex justify-between items-center">

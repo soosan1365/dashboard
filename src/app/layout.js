@@ -27,11 +27,12 @@ export default  function RootLayout({ children }) {
     
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex py-3  `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  flex    `}
       >
+        
         <SidebarProvider >
             <AppSidebar />
-        <main className="w-full ">
+        <main className="w-full mt-3 ">
           <Navbar />
           <div className="">{children}</div>
         </main>

@@ -6,9 +6,9 @@ import { Calendar } from "./Calender";
 
 const DashboardPage = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 mt-3 mx-3 ">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 my-3 mx-3 ">
       {/* left: cards  */}
-      <div className="col-span-1">
+      
       <div className="  flex   gap-4 ">
         {carts.map((cart, index) => (
           <div key={index} className="">
@@ -20,17 +20,16 @@ const DashboardPage = () => {
             />
           </div>
         ))}</div>
+         <div className="row-span-2"><Calendar /></div>
           {/* MyTasks */}
-        <div className="  flex gap-4 "><MyTasks /></div>
-         </div>
+          
+        <div className="  flex gap-4 row-span-3 "><MyTasks /></div>
+        
       {/* right calendar*/}
-      <div className="col-span-1">
-      <div className=" "><Calendar /></div>
-      {/*ScheduleCart*/}
-      <div><ScheduleCart /></div>
       
-    
-     </div>
+      <div className="row-span-2"><ScheduleCart /></div>
+      {/*ScheduleCart*/}
+     
     </div>
   );
 };
