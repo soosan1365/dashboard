@@ -6,7 +6,7 @@ import { Calendar } from "./Calender";
 
 const DashboardPage = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 my-3 mx-3 ">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 my-4 mx-3 ">
       {/* left: cards  */}
       
       <div className="  flex   gap-4 ">

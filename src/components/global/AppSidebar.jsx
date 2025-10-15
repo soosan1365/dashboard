@@ -18,7 +18,7 @@ import {
 const AppSidebar = () => {
   const pathname=usePathname()
   return (
-    <Sidebar className=" py-3 pl-3 flex-shrink-0 ">
+    <Sidebar className=" py-4 pl-3 flex-shrink-0 ">
       <SidebarHeader >
         <h1 className=" ml-4 mt-2 font-bold md:text-lg">UpGradely</h1>
       </SidebarHeader>

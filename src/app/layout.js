@@ -32,7 +32,7 @@ export default  function RootLayout({ children }) {
         
         <SidebarProvider >
             <AppSidebar />
-        <main className="w-full mt-3 ">
+        <main className="w-full mt-4 ">
           <Navbar />
           <div className="">{children}</div>
         </main>

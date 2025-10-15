@@ -14,7 +14,7 @@ import { SidebarTrigger, useSidebar } from "../ui/sidebar";
 
 const Navbar = () => {
   return (
-    <div className=" grid grid-cols-7 sticky top-0 px-5 py-4 mx-3 z-50
+    <div className=" grid grid-cols-7 sticky top-0 p-4 mx-3 z-50
      bg-white rounded-2xl">
 
       {/*left search */}
