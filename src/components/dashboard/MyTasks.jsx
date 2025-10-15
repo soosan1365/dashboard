@@ -23,7 +23,7 @@ const MyTasks = () => {
                         <button
                             key={index}
                             onClick={() => setSelectedstatus(item.title)}
-                            className={`border-2 rounded-4xl whitespace-nowrap border-gray-100 flex justify-between px-3 py-1 ${selectedstatus === item.title ? "bg-black text-white" : ""
+                            className={`border-2 rounded-4xl whitespace-nowrap border-gray-100 flex justify-between px-3.5 py-2 ${selectedstatus === item.title ? "bg-black text-white" : ""
                                 }`}
                         >
                             <p>{item.title}</p></button>
